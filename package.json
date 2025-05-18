@@ -1,0 +1,17 @@
+{
+  "name": "chat-socket.io",
+  "version": "1.0.0",
+  "description": "A chat app made with socket.io",
+  "license": "ISC",
+  "author": "Ashutosh-88",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1"
+  }
+}
