@@ -41,3 +41,7 @@ npm start
 ## Author
 
 - [**Ashutosh-88**](https://www.linkedin.com/in/ashutosh-tiwari-70b504190/)
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the LICENSE.md file for details.
