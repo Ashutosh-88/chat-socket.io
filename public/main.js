@@ -20,8 +20,16 @@ socket.on("clients-total", (data) => {
 });
 
 function sendMessage() {
+  const name = nameInput.value.trim();
+
   if (messageInput.value === "") return;
   // console.log(messageInput.value)
+
+  if (name.length < 3) {
+    alert("Name must be at least 3 characters long.");
+    return;
+  }
+
   const data = {
     name: nameInput.value,
     message: messageInput.value,
@@ -30,6 +38,7 @@ function sendMessage() {
   socket.emit("message", data);
   addMessageToUI(true, data);
   messageInput.value = "";
+  messageInput.blur();
 }
 
 socket.on("chat-message", (data) => {
